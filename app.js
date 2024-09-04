@@ -7,6 +7,8 @@ app.use(require('morgan')("combined"));
 app.set("views", path.join(__dirname,"views"));
 app.set('view engine', 'ejs');
 
+const expenseDB=require("./config/db")
+
 const indexRouter = require("./routes/index");
 
 
